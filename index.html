@@ -356,11 +356,11 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="en">
+<body class="de">
     <!-- Language Switcher -->
     <div class="language-switcher">
-        <button id="en-btn" class="language-btn active" onclick="switchLanguage('en')">EN</button>
-        <button id="de-btn" class="language-btn" onclick="switchLanguage('de')">DE</button>
+        <button id="de-btn" class="language-btn active" onclick="switchLanguage('de')">DE</button>
+        <button id="en-btn" class="language-btn" onclick="switchLanguage('en')">EN</button>
     </div>
     
     <!-- Header -->
@@ -368,7 +368,7 @@
         <div class="container">
             <h1 class="band-name">Brain Stew</h1>
             <p class="band-tagline" lang="en">Songs from Green Day</p>
-            <p class="band-tagline" lang="de">Songs von Green Day</p>
+            <p class="band-tagline" lang="de">Songs from Green Day</p>
         </div>
     </header>
     
@@ -504,7 +504,7 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
             <p class="footer-text" lang="en">&copy; 2025 Brain Stew - Songs from Green Day. All rights reserved.</p>
-            <p class="footer-text" lang="de">&copy; 2025 Brain Stew - Songs von Green Day. Alle Rechte vorbehalten.</p>
+            <p class="footer-text" lang="de">&copy; 2025 Brain Stew - Songs from Green Day. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
@@ -528,6 +528,8 @@
             const savedLanguage = localStorage.getItem('preferredLanguage');
             if (savedLanguage) {
                 switchLanguage(savedLanguage);
+            } else {
+                switchLanguage('de');
             }
             
             // Smooth scrolling for navigation
