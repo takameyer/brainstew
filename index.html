@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Stew - Songs from Green Day</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem 0;
+            position: relative;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/m23bk2xx/concert-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .band-name {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .band-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #2b2b2b;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #4caf50;
+        }
+        
+        /* Language switcher */
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+        
+        .language-btn {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+        
+        .language-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .language-btn.active {
+            background-color: #4caf50;
+            border-color: #4caf50;
+        }
+        
+        /* Section styles */
+        section {
+            padding: 3rem 0;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            font-size: 2.2rem;
+            color: #333;
+        }
+        
+        h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background-color: #4caf50;
+            margin: 0.5rem auto;
+        }
+        
+        /* About section */
+        #about {
+            background-color: #fff;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        /* Gigs section */
+        #gigs {
+            background-color: #f9f9f9;
+        }
+        
+        .gigs-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .gig-item {
+            background-color: #fff;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .gig-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .gig-date {
+            font-weight: bold;
+            color: #4caf50;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .gig-venue {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .gig-address {
+            color: #666;
+        }
+        
+        .gig-action {
+            margin-top: 1rem;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* Contact section */
+        #contact {
+            background-color: #fff;
+        }
+        
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        form {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2b2b2b;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #4caf50;
+        }
+        
+        .footer-text {
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+        
+        /* Language specific content */
+        [lang="de"] {
+            display: none;
+        }
+        
+        .de [lang="en"] {
+            display: none;
+        }
+        
+        .de [lang="de"] {
+            display: block;
+        }
+
+        /* Display all list items regardless of language */
+        li[lang="de"], li[lang="en"] {
+            display: list-item;
+        }
+        
+        .de li[lang="en"] {
+            display: none;
+        }
+        
+        .de li[lang="de"] {
+            display: list-item;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .band-name {
+                font-size: 2.5rem;
+            }
+            
+            .band-tagline {
+                font-size: 1.2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .gig-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .gig-action {
+                width: 100%;
+                margin-top: 1rem;
+                text-align: center;
+            }
+            
+            .language-switcher {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="en">
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="en-btn" class="language-btn active" onclick="switchLanguage('en')">EN</button>
+        <button id="de-btn" class="language-btn" onclick="switchLanguage('de')">DE</button>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="band-name">Brain Stew</h1>
+            <p class="band-tagline" lang="en">Songs from Green Day</p>
+            <p class="band-tagline" lang="de">Songs von Green Day</p>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about" lang="en">About</a></li>
+            <li><a href="#about" lang="de">Über uns</a></li>
+            <li><a href="#gigs" lang="en">Upcoming Gigs</a></li>
+            <li><a href="#gigs" lang="de">Kommende Auftritte</a></li>
+            <li><a href="#contact" lang="en">Contact</a></li>
+            <li><a href="#contact" lang="de">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 lang="en">About Us</h2>
+            <h2 lang="de">Über uns</h2>
+            <div class="about-content">
+                <div lang="en">
+                    <p>Brain Stew is the ultimate Green Day tribute band, dedicated to faithfully reproducing the energy and sound of one of punk rock's most iconic bands. From the raw intensity of their early albums to their modern rock anthems, we bring the Green Day experience to every venue we play.</p>
+                    <br>
+                    <p>Our setlist spans Green Day's entire career, including hits like "Basket Case," "American Idiot," "Boulevard of Broken Dreams," and of course, "Brain Stew." Whether you're a longtime fan or just discovering their music, our shows promise an unforgettable night of punk rock nostalgia.</p>
+                </div>
+                <div lang="de">
+                    <p>Brain Stew ist die ultimative Green Day Tribute-Band, die sich der originalgetreuen Wiedergabe der Energie und des Sounds einer der legendärsten Punk-Rock-Bands verschrieben hat. Von der rohen Intensität ihrer frühen Alben bis hin zu ihren modernen Rock-Hymnen bringen wir das Green Day-Erlebnis zu jedem Veranstaltungsort, an dem wir spielen.</p>
+                    <br>
+                    <p>Unsere Setlist umfasst die gesamte Karriere von Green Day, mit Hits wie "Basket Case", "American Idiot", "Boulevard of Broken Dreams" und natürlich "Brain Stew". Egal, ob du ein langjähriger Fan bist oder ihre Musik gerade erst entdeckst, unsere Shows versprechen eine unvergessliche Nacht voller Punk-Rock-Nostalgie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gigs Section -->
+    <section id="gigs">
+        <div class="container">
+            <h2 lang="en">Upcoming Gigs</h2>
+            <h2 lang="de">Kommende Auftritte</h2>
+            <div class="gigs-list">
+                <!-- Gig 1 -->
+                <div class="gig-item">
+                    <div class="gig-info">
+                        <div class="gig-date">25. April 2025 | 20:00 Uhr</div>
+                        <div class="gig-venue">The Basement Bar</div>
+                        <div class="gig-address">123 Main Street, Anytown</div>
+                    </div>
+                    <div class="gig-action">
+                        <a href="#" class="button" lang="en">Get Tickets</a>
+                        <a href="#" class="button" lang="de">Tickets kaufen</a>
+                    </div>
+                </div>
+                
+                <!-- Gig 2 -->
+                <div class="gig-item">
+                    <div class="gig-info">
+                        <div class="gig-date">10. Mai 2025 | 21:00 Uhr</div>
+                        <div class="gig-venue">Rock City Music Hall</div>
+                        <div class="gig-address">456 Park Avenue, Musicville</div>
+                    </div>
+                    <div class="gig-action">
+                        <a href="#" class="button" lang="en">Get Tickets</a>
+                        <a href="#" class="button" lang="de">Tickets kaufen</a>
+                    </div>
+                </div>
+                
+                <!-- Gig 3 -->
+                <div class="gig-item">
+                    <div class="gig-info">
+                        <div class="gig-date">30. Mai 2025 | 19:30 Uhr</div>
+                        <div class="gig-venue">The Warped Stage</div>
+                        <div class="gig-address">789 Punk Street, Rockton</div>
+                    </div>
+                    <div class="gig-action">
+                        <a href="#" class="button" lang="en">Get Tickets</a>
+                        <a href="#" class="button" lang="de">Tickets kaufen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 lang="en">Contact Us</h2>
+            <h2 lang="de">Kontaktiere uns</h2>
+            <div class="contact-content">
+                <p style="text-align: center; margin-bottom: 2rem;" lang="en">Interested in booking Brain Stew for your venue or event? Fill out the form below and we'll get back to you as soon as possible!</p>
+                <p style="text-align: center; margin-bottom: 2rem;" lang="de">Interesse, Brain Stew für deine Location oder dein Event zu buchen? Fülle das Formular unten aus und wir melden uns so schnell wie möglich bei dir!</p>
+                
+                <!-- Form using Formspree for GitHub Pages -->
+                <form action="https://formspree.io/f/your-formspree-id" method="POST">
+                    <div class="form-group">
+                        <label for="name" lang="en">Name</label>
+                        <label for="name" lang="de">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" lang="en">Email</label>
+                        <label for="email" lang="de">E-Mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" lang="en">Subject</label>
+                        <label for="subject" lang="de">Betreff</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" lang="en">Message</label>
+                        <label for="message" lang="de">Nachricht</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" lang="en">Send Message</button>
+                    <button type="submit" lang="de">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-text" lang="en">&copy; 2025 Brain Stew - Songs from Green Day. All rights reserved.</p>
+            <p class="footer-text" lang="de">&copy; 2025 Brain Stew - Songs von Green Day. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for language switching and smooth scrolling -->
+    <script>
+        // Language switcher
+        function switchLanguage(lang) {
+            document.body.className = lang;
+            
+            // Update active button state
+            document.getElementById('en-btn').classList.remove('active');
+            document.getElementById('de-btn').classList.remove('active');
+            document.getElementById(lang + '-btn').classList.add('active');
+            
+            // Save language preference
+            localStorage.setItem('preferredLanguage', lang);
+        }
+        
+        // Load preferred language from storage if available
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage) {
+                switchLanguage(savedLanguage);
+            }
+            
+            // Smooth scrolling for navigation
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
