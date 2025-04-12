@@ -27,21 +27,22 @@
         }
         
         /* Header styles */
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 1rem 0;
-            position: relative;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/m23bk2xx/concert-bg.jpg');
-            background-size: cover;
-            background-position: center;
+       header {
+            background-color: white;
+            padding: 2rem 0;
             text-align: center;
-            min-height: 400px;
+            min-height: 250px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+        } 
+
+        .logo-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
-        
+
         .band-name {
             font-size: 3.5rem;
             margin-bottom: 1rem;
@@ -84,7 +85,7 @@
             color: #4caf50;
         }
         
-        /* Language switcher */
+               /* Language switcher */
         .language-switcher {
             position: absolute;
             top: 20px;
@@ -95,8 +96,8 @@
         }
         
         .language-btn {
-            background: none;
-            border: 2px solid #fff;
+            background: #2b2b2b;
+            border: 2px solid #2b2b2b;
             color: #fff;
             padding: 5px 10px;
             margin-left: 10px;
@@ -107,14 +108,15 @@
         }
         
         .language-btn:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: #4caf50;
+            border-color: #4caf50;
         }
         
         .language-btn.active {
             background-color: #4caf50;
             border-color: #4caf50;
-        }
-        
+        } 
+
         /* Section styles */
         section {
             padding: 3rem 0;
@@ -363,15 +365,12 @@
         <button id="en-btn" class="language-btn" onclick="switchLanguage('en')">EN</button>
     </div>
     
-    <!-- Header -->
+      <!-- Header -->
     <header>
         <div class="container">
-            <h1 class="band-name">Brain Stew</h1>
-            <p class="band-tagline" lang="en">Songs from Green Day</p>
-            <p class="band-tagline" lang="de">Songs from Green Day</p>
+            <img src="./img/cropped-logo.png" alt="Brain Stew Logo" class="logo-image">
         </div>
-    </header>
-    
+    </header> 
     <!-- Navigation -->
     <nav>
         <ul>
