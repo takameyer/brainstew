@@ -275,6 +275,142 @@
             padding: 2rem 0;
         }
         
+        .footer-legal {
+            margin-top: 1rem;
+        }
+        
+        .footer-legal a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-legal a:hover {
+            color: #4caf50;
+        }
+        
+        /* Impressum section */
+        #impressum {
+            background-color: #fff;
+            padding: 3rem 0;
+        }
+        
+        .impressum-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .impressum-content h3 {
+            color: #333;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .impressum-content p {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Merch section styles */
+        #merch {
+            background-color: #f9f9f9;
+        }
+        
+        .merch-content {
+            text-align: center;
+        }
+        
+        .merch-intro {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.2rem;
+            color: #555;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto;
+        }
+        
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #4caf50;
+        }
+        
+        .store-button-container {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .store-button {
+            display: inline-block;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+        }
+        
+        .store-button:hover {
+            background-color: #388e3c;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+        
+        .store-button i {
+            margin-left: 10px;
+        }
+        
         .social-links {
             margin: 1rem 0;
         }
@@ -322,6 +458,23 @@
             display: list-item;
         }
         
+        /* Language display for inline elements */
+        .product-info h3[lang="de"], .store-button span[lang="de"] {
+            display: none;
+        }
+        
+        .de .product-info h3[lang="en"], .de .store-button span[lang="en"] {
+            display: none;
+        }
+        
+        .de .product-info h3[lang="de"], .de .store-button span[lang="de"] {
+            display: block;
+        }
+        
+        .product-info h3[lang="en"], .store-button span[lang="en"] {
+            display: block;
+        }
+        
         /* Responsive styles */
         @media (max-width: 768px) {
             .band-name {
@@ -353,6 +506,26 @@
                 top: 10px;
                 right: 10px;
             }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+                max-width: 90%;
+            }
+            
+            .product-card {
+                margin: 0 auto;
+                max-width: 350px;
+            }
+            
+            .merch-intro {
+                font-size: 1.1rem;
+                padding: 0 20px;
+            }
+            
+            .store-button {
+                padding: 12px 25px;
+                font-size: 1.1rem;
+            }
         }
     </style>
     <!-- Font Awesome for icons -->
@@ -382,6 +555,8 @@
             <li><a href="#gigs" lang="de">Kommende Auftritte</a></li>
             <li><a href="#contact" lang="en">Contact</a></li>
             <li><a href="#contact" lang="de">Kontakt</a></li>
+            <li><a href="#impressum" lang="en">Imprint</a></li>
+            <li><a href="#impressum" lang="de">Impressum</a></li>
         </ul>
     </nav>
     
@@ -409,21 +584,58 @@
         <div class="container">
             <h2 lang="en">Merch</h2>
             <h2 lang="de">Merch</h2>
-            <div class="about-content">
-                <div lang="en">
-                    <a href="https://brainstew.myspreadshop.com/" target="_blank">
-                        <h3>Visit our Merch Store</h3>
+            <div class="merch-content">
+                <p lang="en" class="merch-intro">Check out our exclusive Brain Stew merchandise! From t-shirts to hoodies, show your love for Brain Stew.</p>
+                <p lang="de" class="merch-intro">Schau dir unsere exklusive Brain Stew Merchandise an! Von T-Shirts bis Hoodies, zeige deine Liebe zu Brain Stew.</p>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <a href="https://brain-stew-merch.myspreadshop.de/apocalyptic+stew-A680b42c8bbdb492a48e54e56?productType=635&sellable=AbZr48QjX3hr04eA8oAo-635-7&appearance=938" target="_blank" class="product-card">
+                        <div class="product-image">
+                            <img src="https://image.spreadshirtmedia.net/image-server/v1/products/T635A938PA7544PT17X42Y35D346773812W19594H20931/views/1,width=650,height=650,appearanceId=938/punk-chaos-meets-whimsy-with-flames-floods-and-faithful-pups-in-this-tribute-to-brain-stews-spirit.jpg" alt="Brain Stew T-Shirt">
+                        </div>
+                        <div class="product-info">
+                            <h3 lang="en">Brain Stew Logo T-Shirt</h3>
+                            <h3 lang="de">Brain Stew Logo T-Shirt</h3>
+                            <p class="product-price">€25,99</p>
+                        </div>
+                    </a>
+                    
+                    <!-- Product 2 -->
+                    <a href="https://brain-stew-merch.myspreadshop.de/apocalyptic+stew-A680b42c8bbdb492a48e54e56?productType=20&sellable=AbZr48QjX3hr04eA8oAo-20-22&appearance=2" target="_blank" class="product-card">
+                        <div class="product-image">
+                            <img src="https://image.spreadshirtmedia.net/image-server/v1/products/T20A647PA5098PT17X82Y21D346773812W18210H19453/views/1,width=650,height=650,appearanceId=2/punk-chaos-meets-whimsy-with-flames-floods-and-faithful-pups-in-this-tribute-to-brain-stews-spirit.jpg" alt="Green Day Tribute Hoodie">
+                        </div>
+                        <div class="product-info">
+                            <h3 lang="en">Tribute Band Hoodie</h3>
+                            <h3 lang="de">Tribute Band Hoodie</h3>
+                            <p class="product-price">€41,99</p>
+                        </div>
+                    </a>
+                    
+                    <!-- Product 3 -->
+                    <a href="https://brain-stew-merch.myspreadshop.de/apocalyptic+stew-A680b42c8bbdb492a48e54e56?productType=268&sellable=AbZr48QjX3hr04eA8oAo-268-32&appearance=542&size=29" target="_blank" class="product-card">
+                        <div class="product-image">
+                            <img src="https://image.spreadshirtmedia.net/image-server/v1/products/T268A541PA393PT10X9Y6D346773812W4210H4498/views/3,width=650,height=650,appearanceId=542/punk-chaos-meets-whimsy-with-flames-floods-and-faithful-pups-in-this-tribute-to-brain-stews-spirit.jpg" alt="Brain Stew Mug">
+                        </div>
+                        <div class="product-info">
+                            <h3 lang="en">Brain Stew Mug</h3>
+                            <h3 lang="de">Brain Stew Tasse</h3>
+                            <p class="product-price">€17,49</p>
+                        </div>
                     </a>
                 </div>
-                <div lang="de">
-                    <a href="https://brainstew.myspreadshop.com/" target="_blank">
-                        <h3>Besuche unseren Merch-Store</h3>
+                
+                <div class="store-button-container">
+                    <a href="https://brain-stew-merch.myspreadshop.de/" target="_blank" class="store-button">
+                        <span lang="en">Visit our full store</span>
+                        <span lang="de">Besuche unseren Shop</span>
+                        <i class="fas fa-shopping-cart"></i>
                     </a>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> 
     <!-- Gigs Section -->
     <section id="gigs">
         <div class="container">
@@ -489,15 +701,56 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61575500311612"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/brainstewde"><i class="fab fa-instagram"></i></a>
+                    <!--<a href="#"><i class="fab fa-youtube"></i></a> -->
             </div>
             <p class="footer-text" lang="en">&copy; 2025 Brain Stew - Songs from Green Day. All rights reserved.</p>
             <p class="footer-text" lang="de">&copy; 2025 Brain Stew - Songs from Green Day. Alle Rechte vorbehalten.</p>
+            <p class="footer-legal">
+                <a href="#impressum" lang="de">Impressum</a>
+                <a href="#impressum" lang="en">Imprint</a>
+            </p>
         </div>
     </footer>
+         <!-- Impressum Section -->
+    <section id="impressum">
+        <div class="container">
+            <h2 lang="de">Impressum</h2>
+            <h2 lang="en">Imprint</h2>
+            <div class="impressum-content">
+                <div lang="de">
+                    <h3>Angaben gemäß § 5 TMG</h3>
+                    <p>Brain Stew - Green Day Tribute Band</p>
+                    <p>Andrew Meyer</p>
+                    <p>Ohliggasse 35</p>
+                    <p>67454 Haßloch</p>
+                    
+                    <h3>Kontakt</h3>
+                    <p>E-Mail: andrew.meyer@hey.com</p>
+                    <p>Telefon: +49 176 35373157</p>
+                    
+                    <h3>Haftungsausschluss</h3>
+                    <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+                </div>
+                <div lang="en">
+                    <h3>Information pursuant to § 5 TMG</h3>
+                    <p>Brain Stew - Green Day Tribute Band</p>
+                    <p>Andrew Meyer</p>
+                    <p>Ohliggasse 35</p>
+                    <p>67454 Haßloch</p>
+                    
+                    <h3>Contact</h3>
+                    <p>Email: andrew.meyer@hey.com</p>
+                    <p>Phone: +49 176 35373157</p>
+                    
+                    <h3>Disclaimer</h3>
+                    <p>The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness and timeliness of the content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- JavaScript for language switching and smooth scrolling -->
     <script>
