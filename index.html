@@ -483,6 +483,74 @@
         .product-info h3[lang="en"], .store-button span[lang="en"] {
             display: block;
         }
+
+        /* Donation section styles */
+        #donate {
+            background-color: #fff;
+            padding: 3rem 0;
+        }
+        
+        .donate-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .donate-text {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .donate-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .donate-option {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+        }
+        
+        .donate-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .donate-icon {
+            font-size: 2.5rem;
+            color: #4caf50;
+            margin-bottom: 1rem;
+        }
+        
+        .donate-button {
+            display: inline-block;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+        }
+        
+        .donate-button:hover {
+            background-color: #388e3c;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
         
         /* Responsive styles */
         @media (max-width: 768px) {
@@ -560,6 +628,8 @@
             <li><a href="#about" lang="de">Über uns</a></li>
             <li><a href="#merch" lang="en">Merch</a></li>
             <li><a href="#merch" lang="de">Merch</a></li>
+            <li><a href="#donate" lang="en">Support Us</a></li>
+            <li><a href="#donate" lang="de">Unterstütze uns</a></li>
             <li><a href="#gigs" lang="en">Upcoming Gigs</a></li>
             <li><a href="#gigs" lang="de">Kommende Auftritte</a></li>
             <li><a href="#contact" lang="en">Contact</a></li>
@@ -645,6 +715,44 @@
             </div>
         </div>
     </section> 
+    <!-- Donation Section -->
+    <section id="donate">
+        <div class="container">
+            <h2 lang="en">Support the Band</h2>
+            <h2 lang="de">Unterstütze die Band</h2>
+            <div class="donate-content">
+                <div lang="en" class="donate-text">
+                    <p>Love what we do? Help us continue bringing the Green Day experience to fans by supporting our band! Your contributions help us cover equipment costs, rehearsal space, and travel expenses.</p>
+                </div>
+                <div lang="de" class="donate-text">
+                    <p>Du liebst was wir tun? Hilf uns, das Green Day-Erlebnis weiterhin zu den Fans zu bringen, indem du unsere Band unterstützt! Deine Beiträge helfen uns, Ausrüstungskosten, Proberaummiete und Reisekosten zu decken.</p>
+                </div>
+                
+                <div class="donate-options">
+                    <div class="donate-option">
+                        <div class="donate-icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <h3 lang="en">One-time Donation</h3>
+                        <h3 lang="de">Einmalige Spende</h3>
+                        <p lang="en">Support us with a one-time contribution of any amount.</p>
+                        <p lang="de">Unterstütze uns mit einem einmaligen Beitrag in beliebiger Höhe.</p>
+                        <a href="https://paypal.me/takameyer" target="_blank" class="donate-button">
+                            <span lang="en">Donate via PayPal</span>
+                            <span lang="de">Spenden via PayPal</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div lang="en">
+                    <p>Every contribution, no matter the size, helps us deliver the authentic Green Day tribute experience you love. Thank you for your support!</p>
+                </div>
+                <div lang="de">
+                    <p>Jeder Beitrag, egal wie groß, hilft uns, das authentische Green Day-Tribute-Erlebnis zu liefern, das du liebst. Vielen Dank für deine Unterstützung!</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Gigs Section -->
     <section id="gigs">
         <div class="container">
