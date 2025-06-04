@@ -1,0 +1,50 @@
+global:
+  english: "EN"
+  german: "DE"
+  title: Brain Stew - Songs von Green Day
+  description: Die ultimative Green Day Tribute Band
+
+nav:
+  about: Über uns
+  donate: Unterstütze uns
+  gigs: Kommende Auftritte
+  contact: Kontakt
+  imprint: Impressum
+
+about:
+  title: Über uns
+  content: >
+    Brain Stew ist die ultimative Green Day Tribute-Band, die sich der originalgetreuen Wiedergabe der Energie und des Sounds einer der legendärsten Punk-Rock-Bands verschrieben hat. Von der rohen Intensität ihrer frühen Alben bis hin zu ihren modernen Rock-Hymnen bringen wir das Green Day-Erlebnis zu jedem Veranstaltungsort, an dem wir spielen.
+    
+    Unsere Setlist umfasst die gesamte Karriere von Green Day, mit Hits wie "Basket Case", "American Idiot", "Boulevard of Broken Dreams" und natürlich "Brain Stew". Egal, ob du ein langjähriger Fan bist oder ihre Musik gerade erst entdeckst, unsere Shows versprechen eine unvergessliche Nacht voller Punk-Rock-Nostalgie.
+
+donate:
+  title: Unterstütze die Band
+  intro: Du liebst was wir tun? Hilf uns, das Green Day-Erlebnis weiterhin zu den Fans zu bringen, indem du unsere Band unterstützt! Deine Beiträge helfen uns, Ausrüstungskosten, Proberaummiete und Reisekosten zu decken.
+  option_title: Einmalige Spende
+  option_description: Unterstütze uns mit einem einmaligen Beitrag in beliebiger Höhe.
+  button: Spenden via PayPal
+  thanks: Jeder Beitrag, egal wie groß, hilft uns, das authentische Green Day-Tribute-Erlebnis zu liefern, das du liebst. Vielen Dank für deine Unterstützung!
+
+gigs:
+  title: Kommende Auftritte
+  date_format: "%d. %B %Y | %H:%M Uhr"
+
+contact:
+  title: Kontaktiere uns
+  intro: Interesse, Brain Stew für deine Location oder dein Event zu buchen? Fülle das Formular unten aus und wir melden uns so schnell wie möglich bei dir!
+  name: Name
+  email: E-Mail
+  subject: Betreff
+  message: Nachricht
+  send: Nachricht senden
+
+footer:
+  copyright: "&copy; 2025 Brain Stew - Songs von Green Day. Alle Rechte vorbehalten."
+
+imprint:
+  title: Impressum
+  legal_title: Angaben gemäß § 5 TMG
+  contact_title: Kontakt
+  disclaimer_title: Haftungsausschluss
+  disclaimer_text: Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. 

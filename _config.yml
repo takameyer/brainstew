@@ -1,0 +1,23 @@
+title: Brain Stew
+description: Green Day Tribute Band
+baseurl: ""
+url: "https://brainstew.de"
+
+# i18n settings
+languages: ["en", "de"]
+default_lang: "en"
+exclude_from_localization: ["css", "js", "img"]
+parallel_localization: true
+lang_from_path: true
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-multiple-languages-plugin
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json 

@@ -1,0 +1,50 @@
+global:
+  english: "EN"
+  german: "DE"
+  title: Brain Stew - Songs from Green Day
+  description: The Ultimate Green Day Tribute Band
+
+nav:
+  about: About
+  donate: Support Us
+  gigs: Upcoming Gigs
+  contact: Contact
+  imprint: Imprint
+
+about:
+  title: About Us
+  content: >
+    Brain Stew is the ultimate Green Day tribute band, dedicated to faithfully reproducing the energy and sound of one of punk rock's most iconic bands. From the raw intensity of their early albums to their modern rock anthems, we bring the Green Day experience to every venue we play.
+    
+    Our setlist spans Green Day's entire career, including hits like "Basket Case," "American Idiot," "Boulevard of Broken Dreams," and of course, "Brain Stew." Whether you're a longtime fan or just discovering their music, our shows promise an unforgettable night of punk rock nostalgia.
+
+donate:
+  title: Support the Band
+  intro: Love what we do? Help us continue bringing the Green Day experience to fans by supporting our band! Your contributions help us cover equipment costs, rehearsal space, and travel expenses.
+  option_title: One-time Donation
+  option_description: Support us with a one-time contribution of any amount.
+  button: Donate via PayPal
+  thanks: Every contribution, no matter the size, helps us deliver the authentic Green Day tribute experience you love. Thank you for your support!
+
+gigs:
+  title: Upcoming Gigs
+  date_format: "%B %d, %Y | %l:%M %p"
+
+contact:
+  title: Contact Us
+  intro: Interested in booking Brain Stew for your venue or event? Fill out the form below and we'll get back to you as soon as possible!
+  name: Name
+  email: Email
+  subject: Subject
+  message: Message
+  send: Send Message
+
+footer:
+  copyright: "&copy; 2025 Brain Stew - Songs from Green Day. All rights reserved."
+
+imprint:
+  title: Imprint
+  legal_title: Information pursuant to § 5 TMG
+  contact_title: Contact
+  disclaimer_title: Disclaimer
+  disclaimer_text: The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness and timeliness of the content. 
