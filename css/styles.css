@@ -115,6 +115,11 @@ nav a:hover {
 /* Section styles */
 section {
     padding: 3rem 0;
+    background-color: #fff;
+}
+
+section:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 h2 {
@@ -132,6 +137,13 @@ h2::after {
     height: 3px;
     background-color: #4caf50;
     margin: 0.5rem auto;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #666;
 }
 
 /* About section */
@@ -206,6 +218,35 @@ h2::after {
 
 .button:hover {
     background-color: #3e8e41;
+}
+
+/* Gallery section */
+.video-gallery {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.video-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-item video {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.video-caption {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
 }
 
 /* Contact section */

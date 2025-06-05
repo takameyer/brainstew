@@ -47,4 +47,10 @@ imprint:
   legal_title: Angaben gemäß § 5 TMG
   contact_title: Kontakt
   disclaimer_title: Haftungsausschluss
-  disclaimer_text: Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. 
+  disclaimer_text: Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+
+gallery:
+  title: "Galerie"
+  intro: "Schauen Sie sich unsere neuesten Auftritte und Bandmomente an"
+  video_not_supported: "Ihr Browser unterstützt das Video-Tag nicht."
+  video_caption: "Live im The Venue - April 2025" 

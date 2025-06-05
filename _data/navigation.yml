@@ -1,0 +1,29 @@
+- title: about
+  url: "#about"
+  text_en: About
+  text_de: Über uns
+
+- title: donate
+  url: "#donate"
+  text_en: Support Us
+  text_de: Unterstütze uns
+
+- title: gigs
+  url: "#gigs"
+  text_en: Upcoming Gigs
+  text_de: Kommende Auftritte
+
+- title: gallery
+  url: "#gallery"
+  text_en: Gallery
+  text_de: Galerie
+
+- title: contact
+  url: "#contact"
+  text_en: Contact
+  text_de: Kontakt
+
+- title: imprint
+  url: "/imprint/"
+  text_en: Imprint
+  text_de: Impressum 

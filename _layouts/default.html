@@ -60,11 +60,17 @@
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#about">{% translate nav.about %}</a></li>
-            <li><a href="#donate">{% translate nav.donate %}</a></li>
-            <li><a href="#gigs">{% translate nav.gigs %}</a></li>
-            <li><a href="#contact">{% translate nav.contact %}</a></li>
-            <li><a href="#impressum">{% translate nav.imprint %}</a></li>
+            {% for item in site.data.navigation %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ item.url }}">
+                        {% if site.lang == site.default_lang %}
+                            {{ item.text_en }}
+                        {% else %}
+                            {{ item.text_de }}
+                        {% endif %}
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
     </nav>
 
@@ -79,7 +85,7 @@
             </div>
             <p class="footer-text">{% translate footer.copyright %}</p>
             <p class="footer-legal">
-                <a href="#impressum">{% translate nav.imprint %}</a>
+                <a href="{{ site.baseurl }}/{% if site.lang != site.default_lang %}{{ site.lang }}/{% endif %}imprint/">{% translate nav.imprint %}</a>
             </p>
         </div>
     </footer>

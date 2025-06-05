@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="gallery-container">
+  <h1>{% translate gallery.title %}</h1>
+  <p class="gallery-description">{% translate gallery.description %}</p>
+
+  <div class="video-container">
+    <video controls preload="metadata" poster="/assets/images/video-poster.jpg">
+      <source src="/assets/videos/performance.webm" type="video/webm">
+      <source src="/assets/videos/performance.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="video-caption">{% translate gallery.video_caption %}</p>
+  </div>
+</div>
+
+<style>
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.gallery-description {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.video-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.video-caption {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 1rem;
+  }
+}
+</style> 
