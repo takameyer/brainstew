@@ -1,25 +1,25 @@
 - title: about
-  url: "#about"
+  url: "/#about"
   text_en: About
   text_de: Über uns
 
 - title: donate
-  url: "#donate"
+  url: "/#donate"
   text_en: Support Us
   text_de: Unterstütze uns
 
 - title: gigs
-  url: "#gigs"
+  url: "/#gigs"
   text_en: Upcoming Gigs
   text_de: Kommende Auftritte
 
 - title: gallery
-  url: "#gallery"
+  url: "/#gallery"
   text_en: Gallery
   text_de: Galerie
 
 - title: contact
-  url: "#contact"
+  url: "/#contact"
   text_en: Contact
   text_de: Kontakt
 

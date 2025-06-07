@@ -35,7 +35,6 @@ contact:
   intro: Interesse, Brain Stew für deine Location oder dein Event zu buchen? Fülle das Formular unten aus und wir melden uns so schnell wie möglich bei dir!
   name: Name
   email: E-Mail
-  subject: Betreff
   message: Nachricht
   send: Nachricht senden
 
@@ -47,7 +46,34 @@ imprint:
   legal_title: Angaben gemäß § 5 TMG
   contact_title: Kontakt
   disclaimer_title: Haftungsausschluss
-  disclaimer_text: Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+  content: |
+    ### Angaben gemäß § 5 TMG
+    Brain Stew - Green Day Tribute Band  
+    Andrew Meyer  
+    Ohliggasse 35  
+    67454 Haßloch  
+    Deutschland
+
+    ### Kontakt
+    Telefon: +49 176 35373157  
+    E-Mail: andrew.meyer@hey.com
+
+    ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+    Andrew Meyer  
+    Ohliggasse 35  
+    67454 Haßloch
+
+    ### Streitschlichtung
+    Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr
+    Unsere E-Mail-Adresse finden Sie oben im Impressum.
+
+    Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+
+    ### Haftung für Inhalte
+    Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+
+    ### Urheberrecht
+    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
 
 gallery:
   title: "Galerie"

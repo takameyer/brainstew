@@ -4,8 +4,8 @@ baseurl: ""
 url: "https://brainstew.de"
 
 # i18n settings
-languages: ["en", "de"]
-default_lang: "en"
+languages: ["de", "en"]
+default_lang: "de"
 exclude_from_localization: ["css", "js", "img"]
 parallel_localization: true
 lang_from_path: true

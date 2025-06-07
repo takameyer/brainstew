@@ -62,8 +62,12 @@
         <ul>
             {% for item in site.data.navigation %}
                 <li>
-                    <a href="{{ site.baseurl }}{{ item.url }}">
-                        {% if site.lang == site.default_lang %}
+                    {% if site.lang == site.default_lang %}
+                        <a href="{{ site.baseurl }}{{ item.url }}">
+                    {% else %}
+                        <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}">
+                    {% endif %}
+                        {% if site.lang == 'en' %}
                             {{ item.text_en }}
                         {% else %}
                             {{ item.text_de }}

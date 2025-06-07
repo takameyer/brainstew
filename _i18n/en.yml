@@ -35,7 +35,6 @@ contact:
   intro: Interested in booking Brain Stew for your venue or event? Fill out the form below and we'll get back to you as soon as possible!
   name: Name
   email: Email
-  subject: Subject
   message: Message
   send: Send Message
 
@@ -43,11 +42,38 @@ footer:
   copyright: "&copy; 2025 Brain Stew - Songs from Green Day. All rights reserved."
 
 imprint:
-  title: Imprint
-  legal_title: Information pursuant to § 5 TMG
+  title: Legal Notice
+  legal_title: Information according to § 5 TMG
   contact_title: Contact
   disclaimer_title: Disclaimer
-  disclaimer_text: The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness and timeliness of the content.
+  content: |
+    ### Information according to § 5 TMG
+    Brain Stew - Green Day Tribute Band  
+    Andrew Meyer  
+    Ohliggasse 35  
+    67454 Haßloch  
+    Germany
+
+    ### Contact
+    Phone: +49 176 35373157  
+    Email: andrew.meyer@hey.com
+
+    ### Responsible for content according to § 55 Abs. 2 RStV
+    Andrew Meyer  
+    Ohliggasse 35  
+    67454 Haßloch
+
+    ### Dispute Resolution
+    The European Commission provides a platform for online dispute resolution (OS): https://ec.europa.eu/consumers/odr
+    You can find our email address in the legal notice above.
+
+    We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+
+    ### Liability for Content
+    As a service provider, we are responsible for our own content on these pages in accordance with § 7 paragraph 1 TMG under general law. According to §§ 8 to 10 TMG, however, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
+
+    ### Copyright
+    The content and works created by the site operators on these pages are subject to German copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator.
 
 gallery:
   title: "Gallery"

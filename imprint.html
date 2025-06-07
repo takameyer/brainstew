@@ -3,9 +3,11 @@ layout: default
 permalink: /imprint/
 ---
 
-<div class="imprint-section">
-    <h1>{% translate imprint.title %}</h1>
-    <div class="imprint-content">
-        {{ site.translations[site.lang].imprint.content | markdownify }}
+<section id="imprint">
+    <div class="container">
+        <h2>{% translate imprint.title %}</h2>
+        <div class="imprint-content">
+            {{ site.translations[site.lang].imprint.content | markdownify }}
+        </div>
     </div>
-</div> 
+</section> 

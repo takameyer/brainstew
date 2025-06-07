@@ -103,11 +103,6 @@ lang: en
                 </div>
                 
                 <div class="form-group">
-                    <label for="subject">{% translate contact.subject %}</label>
-                    <input type="text" id="subject" name="subject">
-                </div>
-                
-                <div class="form-group">
                     <label for="message">{% translate contact.message %}</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
@@ -115,27 +110,6 @@ lang: en
                 
                 <button type="submit">{% translate contact.send %}</button>
             </form>
-        </div>
-    </div>
-</section>
-
-<!-- Impressum Section -->
-<section id="impressum">
-    <div class="container">
-        <h2>{% translate imprint.title %}</h2>
-        <div class="impressum-content">
-            <h3>{% translate imprint.legal_title %}</h3>
-            <p>Brain Stew - Green Day Tribute Band</p>
-            <p>Andrew Meyer</p>
-            <p>Ohliggasse 35</p>
-            <p>67454 Haßloch</p>
-            
-            <h3>{% translate imprint.contact_title %}</h3>
-            <p>Email: andrew.meyer@hey.com</p>
-            <p>Phone: +49 176 35373157</p>
-            
-            <h3>{% translate imprint.disclaimer_title %}</h3>
-            <p>{% translate imprint.disclaimer_text %}</p>
         </div>
     </div>
 </section>
