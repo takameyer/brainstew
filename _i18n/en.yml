@@ -81,6 +81,10 @@ imprint:
 
 gallery:
   title: "Gallery"
-  intro: "Check out our latest performances and band moments"
+  intro: "Featured artwork, performances, and band moments"
+  full_intro: "Explore our complete collection of videos and photos from performances and band events"
   video_not_supported: "Your browser does not support the video tag."
-  video_caption: "Speyerdorfer Froschkerwe - April 2025" 
+  video_caption: "Speyerdorfer Froschkerwe - April 2025"
+  view_more: "View Full Gallery"
+  videos_title: "Videos"
+  photos_title: "Photos" 

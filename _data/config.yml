@@ -1,0 +1,9 @@
+# Global site configuration and feature flags
+
+# Feature toggles - set to true/false to show/hide sections
+features:
+  show_donate: false        # Show/hide the "Support the Band" donation section
+  show_gigs: true          # Show/hide the upcoming gigs section
+  show_gallery: true       # Show/hide the gallery section
+  show_contact: true       # Show/hide the contact form
+  show_about: true         # Show/hide the about section

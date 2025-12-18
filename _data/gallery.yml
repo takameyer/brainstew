@@ -1,0 +1,65 @@
+# Gallery items
+# Type can be: video, photo
+# featured: true will display on home page
+# For videos, use either youtube_id or vimeo_id
+# caption: Text to display below media (also used as alt text for photos)
+# show_caption: Set to true to display caption below the media
+
+# Videos
+- type: video
+  youtube_id: "0PvWqDn7c68"
+  caption: "Speyerdorfer Froschkerwe - April 2025"
+  show_caption: true
+  featured: true
+  date: "2025-04-26"
+
+# Photos
+- type: photo
+  image: "/assets/images/gallery/PHOTO-2025-11-25-20-51-55.jpg"
+  caption: "Brain Stew Performance"
+  show_caption: false
+  featured: true
+  date: "2025-11-25"
+
+- type: photo
+  image: "/assets/images/gallery/PHOTO-2025-11-25-20-51-55 (1).jpg"
+  caption: "Brain Stew Performance"
+  show_caption: false
+  featured: true
+  date: "2025-11-25"
+
+- type: photo
+  image: "/assets/images/gallery/PHOTO-2025-11-25-20-51-55 (2).jpg"
+  caption: "Brain Stew Performance"
+  show_caption: false
+  featured: true
+  date: "2025-11-25"
+
+- type: photo
+  image: "/assets/images/gallery/PHOTO-2025-11-25-20-51-55 (3).jpg"
+  caption: "Brain Stew Performance"
+  show_caption: false
+  featured: true
+  date: "2025-11-25"
+
+- type: photo
+  image: "/assets/images/gallery/PHOTO-2025-11-25-20-51-55 (4).jpg"
+  caption: "Brain Stew Performance"
+  show_caption: false
+  featured: true
+  date: "2025-11-25"
+
+- type: photo
+  image: "/assets/images/gallery/PHOTO-2025-11-25-20-53-25.jpg"
+  caption: "Brain Stew Performance"
+  show_caption: false
+  featured: true
+  date: "2025-11-25"
+
+- type: photo
+  image: "/assets/images/gallery/PHOTO-2025-11-25-20-54-23.jpg"
+  caption: "Brain Stew - Original Artwork"
+  show_caption: true
+  featured: true
+  featured_artwork: true
+  date: "2025-11-25"

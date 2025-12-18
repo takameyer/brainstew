@@ -36,31 +36,36 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        {% for lang in site.languages %}
-            {% if lang == site.default_lang %}
-                {% capture lang_url %}/{% endcapture %}
-            {% else %}
-                {% capture lang_url %}/{{ lang }}/{% endcapture %}
-            {% endif %}
-            <a href="{{ lang_url }}" class="language-btn{% if lang == site.lang %} active{% endif %}">
-                {{ lang | upcase }}
-            </a>
-        {% endfor %}
-    </div>
-    
     <!-- Header -->
     <header>
         <div class="container">
             <img src="{{ site.baseurl }}/assets/images/gallery/bs-logo.png" alt="Brain Stew Logo" class="logo-image">
         </div>
     </header>
-    
+
     <!-- Navigation -->
     <nav>
-        <ul>
+        <div class="container">
+            <!-- Sticky Logo (appears on scroll) -->
+            <div class="sticky-logo-container">
+                <img src="{{ site.baseurl }}/assets/images/bs-logo-overlay.jpg" alt="Brain Stew" class="sticky-logo">
+            </div>
+            <ul>
             {% for item in site.data.navigation %}
+                {% assign show_item = true %}
+                {% if item.title == 'about' and site.data.config.features.show_about == false %}
+                    {% assign show_item = false %}
+                {% elsif item.title == 'donate' and site.data.config.features.show_donate == false %}
+                    {% assign show_item = false %}
+                {% elsif item.title == 'gigs' and site.data.config.features.show_gigs == false %}
+                    {% assign show_item = false %}
+                {% elsif item.title == 'gallery' and site.data.config.features.show_gallery == false %}
+                    {% assign show_item = false %}
+                {% elsif item.title == 'contact' and site.data.config.features.show_contact == false %}
+                    {% assign show_item = false %}
+                {% endif %}
+
+                {% if show_item %}
                 <li>
                     {% if site.lang == site.default_lang %}
                         <a href="{{ site.baseurl }}{{ item.url }}">
@@ -74,8 +79,10 @@
                         {% endif %}
                     </a>
                 </li>
+                {% endif %}
             {% endfor %}
-        </ul>
+            </ul>
+        </div>
     </nav>
 
     {{ content }}
@@ -88,9 +95,22 @@
                 <a href="https://www.instagram.com/brainstewde"><i class="fab fa-instagram"></i></a>
             </div>
             <p class="footer-text">{% translate footer.copyright %}</p>
-            <p class="footer-legal">
+            <div class="footer-links">
                 <a href="{{ site.baseurl }}/{% if site.lang != site.default_lang %}{{ site.lang }}/{% endif %}imprint/">{% translate nav.imprint %}</a>
-            </p>
+                <span class="footer-separator">|</span>
+                <div class="footer-language-switcher">
+                    {% for lang in site.languages %}
+                        {% if lang == site.default_lang %}
+                            {% capture lang_url %}/{% endcapture %}
+                        {% else %}
+                            {% capture lang_url %}/{{ lang }}/{% endcapture %}
+                        {% endif %}
+                        <a href="{{ lang_url }}" class="language-link{% if lang == site.lang %} active{% endif %}">
+                            {{ lang | upcase }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </footer>
 

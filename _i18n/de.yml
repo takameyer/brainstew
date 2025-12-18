@@ -81,6 +81,10 @@ imprint:
 
 gallery:
   title: "Galerie"
-  intro: "Schauen Sie sich unsere neuesten Auftritte und Bandmomente an"
+  intro: "Featured Artwork, Auftritte und Bandmomente"
+  full_intro: "Entdecken Sie unsere komplette Sammlung von Videos und Fotos von Auftritten und Band-Events"
   video_not_supported: "Ihr Browser unterstützt das Video-Tag nicht."
-  video_caption: "Speyerdorfer Froschkerwe - April 2025" 
+  video_caption: "Speyerdorfer Froschkerwe - April 2025"
+  view_more: "Zur vollständigen Galerie"
+  videos_title: "Videos"
+  photos_title: "Fotos" 

@@ -1,5 +1,21 @@
 // Smooth scrolling and navigation handling
 document.addEventListener('DOMContentLoaded', function() {
+    // Sticky logo on scroll
+    const header = document.querySelector('header');
+    const stickyLogoContainer = document.querySelector('.sticky-logo-container');
+
+    if (header && stickyLogoContainer) {
+        const headerHeight = header.offsetHeight;
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > headerHeight) {
+                stickyLogoContainer.classList.add('visible');
+            } else {
+                stickyLogoContainer.classList.remove('visible');
+            }
+        });
+    }
+
     // Handle navigation and footer links
     document.querySelectorAll('nav a, .footer-legal a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -82,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Photo gallery lightbox functionality
-    const galleryImages = document.querySelectorAll('.photo-gallery-item img');
+    const galleryImages = document.querySelectorAll('.photo-gallery-item img, .featured-artwork img');
 
     if (galleryImages.length > 0) {
         // Create lightbox element
