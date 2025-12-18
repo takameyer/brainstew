@@ -35,3 +35,5 @@ Icon
 # Logs and databases
 *.log
 *.sqlite 
+
+raw/
