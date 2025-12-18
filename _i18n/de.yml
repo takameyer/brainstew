@@ -29,6 +29,10 @@ donate:
 gigs:
   title: Kommende Auftritte
   date_format: "%d. %B %Y | %H:%M Uhr"
+  more_info: Mehr Infos
+  no_gigs: Wir haben derzeit keine anstehenden Auftritte geplant.
+  booking_text: Möchtest du uns für deine Location oder dein Event buchen? Wir freuen uns auf deine Nachricht!
+  contact_button: Kontaktiere uns
 
 contact:
   title: Kontaktiere uns

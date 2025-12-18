@@ -212,6 +212,21 @@ h2::after {
     margin-top: 1rem;
 }
 
+.no-gigs {
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.no-gigs .section-intro {
+    margin-bottom: 1.5rem;
+}
+
+.no-gigs .button {
+    margin-top: 1rem;
+}
+
 .button {
     display: inline-block;
     background-color: #4caf50;

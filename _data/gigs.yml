@@ -1,0 +1,13 @@
+# Gigs list
+# To add a gig, uncomment and fill in the template below:
+# - date: "2025-04-26 19:00:00"
+#   venue: "Venue Name"
+#   address: "Location/Address"
+#   link: "https://example.com/event"  # Optional
+
+# Example:
+# - date: "2025-04-26 19:00:00"
+#   venue: "Speyerdorfer Froschkerwe"
+#   address: "Musikverein - Hof"
+
+# Current gigs (empty = no upcoming gigs):

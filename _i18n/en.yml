@@ -29,6 +29,10 @@ donate:
 gigs:
   title: Upcoming Gigs
   date_format: "%B %d, %Y | %l:%M %p"
+  more_info: More Info
+  no_gigs: We currently don't have any upcoming gigs scheduled.
+  booking_text: Looking to book us for your venue or event? We'd love to hear from you!
+  contact_button: Get in Touch
 
 contact:
   title: Contact Us

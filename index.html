@@ -45,17 +45,32 @@ lang: en
 <section id="gigs">
     <div class="container">
         <h2>{% translate gigs.title %}</h2>
-        <div class="gigs-list">
-            <!-- Gig 1 -->
-            <div class="gig-item">
-                <div class="gig-info">
-                    {% assign date = "2025-04-26 19:00:00" | date: site.translations[site.lang].gigs.date_format %}
-                    <div class="gig-date">{{ date }}</div>
-                    <div class="gig-venue">Speyerdorfer Froschkerwe</div>
-                    <div class="gig-address">Musikverein - Hof</div>
-                </div>
+
+        {% if site.data.gigs.size > 0 %}
+            <div class="gigs-list">
+                {% for gig in site.data.gigs %}
+                    <div class="gig-item">
+                        <div class="gig-info">
+                            {% assign date = gig.date | date: site.translations[site.lang].gigs.date_format %}
+                            <div class="gig-date">{{ date }}</div>
+                            <div class="gig-venue">{{ gig.venue }}</div>
+                            <div class="gig-address">{{ gig.address }}</div>
+                        </div>
+                        {% if gig.link %}
+                            <div class="gig-action">
+                                <a href="{{ gig.link }}" target="_blank" class="button">{% translate gigs.more_info %}</a>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
             </div>
-        </div>
+        {% else %}
+            <div class="no-gigs">
+                <p class="section-intro">{% translate gigs.no_gigs %}</p>
+                <p class="section-intro">{% translate gigs.booking_text %}</p>
+                <a href="#contact" class="button">{% translate gigs.contact_button %}</a>
+            </div>
+        {% endif %}
     </div>
 </section>
 
