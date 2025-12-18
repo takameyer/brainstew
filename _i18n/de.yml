@@ -3,6 +3,13 @@ global:
   german: "DE"
   title: Brain Stew - Songs von Green Day
   description: Die ultimative Green Day Tribute Band
+  tagline: Deine Lieblings-Green Day Hits, live und authentisch
+
+hero:
+  title: Brain Stew bringt die Energie und Leidenschaft von Green Day zu eurer Location
+  subtitle: Von "Basket Case" bis "American Idiot" - authentischer Sound, echte Liebe zur Musik
+  cta: Brain Stew buchen
+  location: Aus die Pfalz, Verfügbar in ganz Deutschland
 
 nav:
   about: Über uns
@@ -13,10 +20,15 @@ nav:
 
 about:
   title: Über uns
-  content: >
-    Brain Stew ist die ultimative Green Day Tribute-Band, die sich der originalgetreuen Wiedergabe der Energie und des Sounds einer der legendärsten Punk-Rock-Bands verschrieben hat. Von der rohen Intensität ihrer frühen Alben bis hin zu ihren modernen Rock-Hymnen bringen wir das Green Day-Erlebnis zu jedem Veranstaltungsort, an dem wir spielen.
-    
-    Unsere Setlist umfasst die gesamte Karriere von Green Day, mit Hits wie "Basket Case", "American Idiot", "Boulevard of Broken Dreams" und natürlich "Brain Stew". Egal, ob du ein langjähriger Fan bist oder ihre Musik gerade erst entdeckst, unsere Shows versprechen eine unvergessliche Nacht voller Punk-Rock-Nostalgie.
+  intro: "Wir sind eine Gruppe von Musikern, die mit einer Mission zusammengekommen sind: großartige Shows mit Green Day als Einfluss zu spielen. Seit unserer Gründung 2023 haben wir uns darauf konzentriert, authentische Punk-Rock-Energie zu jeder Location zu bringen."
+  description: "Brain Stew bringt die rohe Kraft und Leidenschaft von Green Days Katalog zu eurem Event. Von der Intensität von \"Dookie\" bis zu den Hymnen von \"American Idiot\" liefern wir Performances, die den Spirit einfangen, der Green Days Musik zeitlos macht."
+  highlights:
+    - Authentischer Sound und Energie von Green Days Hits
+    - Professionelle Ausrüstung und zuverlässige Performance
+    - Echte Leidenschaft für großartige Shows
+    - 1,5 Jahre gemeinsames Spielen, ständig am Verfeinern unseres Handwerks
+    - Repertoire über alle Green Day Ären
+  closing: Wir versuchen nicht, Green Day zu sein – wir sind eine Band, die ihre Musik als Grundlage nutzt, um unvergessliche Live-Performances zu liefern. Ob Festival, private Feier oder Club-Nacht, wir bringen den Punk-Rock-Spirit.
 
 donate:
   title: Unterstütze die Band
@@ -31,8 +43,8 @@ gigs:
   date_format: "%d. %B %Y | %H:%M Uhr"
   more_info: Mehr Infos
   no_gigs: Wir haben derzeit keine anstehenden Auftritte geplant.
-  booking_text: Möchtest du uns für deine Location oder dein Event buchen? Wir freuen uns auf deine Nachricht!
-  contact_button: Kontaktiere uns
+  booking_text: Jetzt buchbar für 2026! Möchtest du uns für deine Location oder dein Event buchen? Wir freuen uns auf deine Nachricht!
+  contact_button: Brain Stew buchen
 
 contact:
   title: Kontaktiere uns

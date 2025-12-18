@@ -3,6 +3,13 @@ global:
   german: "DE"
   title: Brain Stew - Songs from Green Day
   description: The Ultimate Green Day Tribute Band
+  tagline: Your favorite Green Day hits, live and authentic
+
+hero:
+  title: Brain Stew brings the energy and passion of Green Day to your venue
+  subtitle: From "Basket Case" to "American Idiot" - authentic sound, genuine love for the music
+  cta: Book Brain Stew
+  location: Based in the Pfalz, Available across Germany
 
 nav:
   about: About
@@ -13,10 +20,15 @@ nav:
 
 about:
   title: About Us
-  content: >
-    Brain Stew is the ultimate Green Day tribute band, dedicated to faithfully reproducing the energy and sound of one of punk rock's most iconic bands. From the raw intensity of their early albums to their modern rock anthems, we bring the Green Day experience to every venue we play.
-    
-    Our setlist spans Green Day's entire career, including hits like "Basket Case," "American Idiot," "Boulevard of Broken Dreams," and of course, "Brain Stew." Whether you're a longtime fan or just discovering their music, our shows promise an unforgettable night of punk rock nostalgia.
+  intro: "We're a group of musicians who came together with a mission: put on great shows using Green Day as our influence. Since forming in 2023, we've dedicated ourselves to delivering authentic punk rock energy to every venue we play."
+  description: "Brain Stew brings the raw power and passion of Green Day's catalog to your event. From the intensity of \"Dookie\" to the anthems of \"American Idiot,\" we deliver performances that capture the spirit of what makes Green Day's music timeless."
+  highlights:
+    - Authentic sound and energy of Green Day's hits
+    - Professional equipment and reliable performance
+    - Genuine passion for putting on great shows
+    - 1.5 years of playing together, constantly refining our craft
+    - Repertoire spanning all Green Day eras
+  closing: We're not trying to be Green Day – we're a band that uses their music as the foundation for delivering memorable live performances. Whether it's a festival, private party, or club night, we bring the punk rock spirit.
 
 donate:
   title: Support the Band
@@ -31,8 +43,8 @@ gigs:
   date_format: "%B %d, %Y | %l:%M %p"
   more_info: More Info
   no_gigs: We currently don't have any upcoming gigs scheduled.
-  booking_text: Looking to book us for your venue or event? We'd love to hear from you!
-  contact_button: Get in Touch
+  booking_text: Now booking for 2026! Looking to book us for your venue or event? We'd love to hear from you!
+  contact_button: Book Brain Stew
 
 contact:
   title: Contact Us

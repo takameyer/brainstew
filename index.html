@@ -4,13 +4,36 @@ permalink: /
 lang: en
 ---
 
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container">
+        <h1 class="hero-title">{% translate hero.title %}</h1>
+        <p class="hero-subtitle">{% translate hero.subtitle %}</p>
+        <a href="#contact" class="button hero-cta">{% translate hero.cta %}</a>
+        <p class="hero-location">{% translate hero.location %}</p>
+    </div>
+</section>
+
 {% if site.data.config.features.show_about %}
 <!-- About Section -->
 <section id="about">
     <div class="container">
         <h2>{% translate about.title %}</h2>
+        <p class="tagline">{% translate global.tagline %}</p>
+
         <div class="about-content">
-            {{ site.translations[site.lang].about.content | markdownify }}
+            <p class="about-intro">{% translate about.intro %}</p>
+            <p class="about-description">{% translate about.description %}</p>
+
+            <div class="about-highlights">
+                <ul>
+                    {% for highlight in site.translations[site.lang].about.highlights %}
+                        <li>{{ highlight }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <p class="about-closing">{% translate about.closing %}</p>
         </div>
     </div>
 </section>
