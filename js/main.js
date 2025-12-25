@@ -16,6 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Scroll indicator click handler
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', function() {
+            const headerHeight = header ? header.offsetHeight : 0;
+            window.scrollTo({
+                top: headerHeight,
+                behavior: 'smooth'
+            });
+        });
+    }
+
     // Handle navigation and footer links
     document.querySelectorAll('nav a, .footer-legal a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
