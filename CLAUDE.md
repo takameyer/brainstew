@@ -4,11 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Brain Stew is a Green Day tribute band based in Germany. This repo contains their website (`website/`) and raw assets (logos, photos, a concert video). The website is a Jekyll static site with German/English bilingual support, deployed to GitHub Pages at brainstew.de.
+Brain Stew is a Green Day tribute band based in Germany. This repo contains their website and raw assets (logos, photos, a concert video). The website is a Jekyll static site with German/English bilingual support, deployed to GitHub Pages at brainstew.de.
 
 ## Development Commands
-
-All commands run from the `website/` directory.
 
 **Install dependencies (first time):**
 ```bash

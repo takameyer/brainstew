@@ -17,9 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: website
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,7 +26,6 @@ jobs:
         with:
           ruby-version: '3.4.4'
           bundler: '2.6.9'
-          working-directory: website
 
       - name: Install dependencies
         run: bundle install
@@ -46,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: website/_site
+          path: _site
 
   deploy:
     environment:
