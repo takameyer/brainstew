@@ -191,7 +191,8 @@ nav a {
     transition: color 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     color: var(--color-primary);
 }
 
@@ -878,19 +879,19 @@ footer {
     background-color: var(--color-primary);
     color: #fff;
     padding: 12px 30px;
-    border-radius: 50px;
+    border-radius: 2px;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
     margin-top: 1.5rem;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(227, 30, 36, 0.3);
+    box-shadow: 0 3px 0 var(--color-primary-dark);
 }
 
 .donate-button:hover {
     background-color: var(--color-primary-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(227, 30, 36, 0.4);
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 var(--color-primary-dark);
 }
 
 .social-links {
