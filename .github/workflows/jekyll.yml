@@ -17,32 +17,36 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.4.4'
           bundler: '2.6.9'
-      
+          working-directory: website
+
       - name: Install dependencies
-        run: |
-          gem install bundler -v 2.6.9
-          bundle install
-      
+        run: bundle install
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      
+
       - name: Build site
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: website/_site
 
   deploy:
     environment:
@@ -53,4 +57,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
