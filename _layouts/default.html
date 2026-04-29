@@ -42,7 +42,10 @@
     
     <!-- Header -->
     <header>
-        <img src="{{ site.baseurl }}/assets/images/preview.gif" alt="Brain Stew Band" class="header-bg-image">
+        <video class="header-bg-image" autoplay muted loop playsinline poster="{{ site.baseurl }}/assets/images/video-poster.jpg">
+            <source src="{{ site.baseurl }}/assets/images/preview.webm" type="video/webm">
+            <source src="{{ site.baseurl }}/assets/images/preview.mp4" type="video/mp4">
+        </video>
         <img src="{{ site.baseurl }}/assets/images/gallery/bs-logo.png" alt="Brain Stew Logo" class="header-logo-overlay">
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down"></i>
